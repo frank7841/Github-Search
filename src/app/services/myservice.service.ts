@@ -8,6 +8,9 @@ import {environment} from 'src/environments/environment.prod';
   providedIn: 'root'
 })
 export class MyserviceService {
+  userFind:Users;
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    this.userFind = new Users("","","","",0,0,0,"",new Date);
+   }
 }
