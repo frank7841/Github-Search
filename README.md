@@ -1,27 +1,28 @@
-# GithubSearch
+# Title
+Github-Search
+## Description: 
+Github-serach App allows you to search for github usernames and view details and descriptions of github users found i.e date joined, date and description of his or her public repositories, followers,following and  profile picture. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## Author:
+Frankline Simiyu
 
-## Development server
+## Setup:
+`git clone https://github.com/frank7841/Github-Search.git`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies:
+*Angular
+* HTML5
+* Bootstrap
+* Javascript
+* Jquery
 
-## Code scaffolding
+## BDD:
+| Inputs |  Description |
+| :---         |          ---: |
+| Search git username   | `eg frank7841`|
+| Search git Ripo     | `Delani Studio`   |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License:
+ Frankline Simiyu 2020
+ franklinewax@gmail.com

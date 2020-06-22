@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-import { SearchRippoComponent } from './search-rippo/search-rippo.component';
+//import { SearchRippoComponent } from './search-rippo/search-rippo.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { DatepipePipe } from './datepipe.pipe';
@@ -19,7 +19,7 @@ import { DatepipePipe } from './datepipe.pipe';
     AppComponent,
     HeaderComponent,
     NavigationBarComponent,
-    SearchRippoComponent,
+  //  SearchRippoComponent,
     SearchFormComponent,
     RepositoriesComponent,
     DatepipePipe
