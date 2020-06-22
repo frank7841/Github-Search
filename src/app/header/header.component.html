@@ -23,19 +23,16 @@
             <hr>
             <p> <i class="fa fa-users"style="font-size:18px"></i>&nbsp;&nbsp; Followers:&nbsp;&nbsp; <span class="follow">{{user.followers}}</span></p>
             <hr>
-            <p><i class="fa fa-clock-o" style="font-size:18px"></i>&nbsp;&nbsp; Joined:&nbsp;&nbsp; <span class="datejoined">{{user.created_at}}</span></p>
+            <p><i class="fa fa-clock-o" style="font-size:18px"></i>&nbsp;&nbsp; Joined:&nbsp;&nbsp; <span class="datejoined">{{user.created_at| datepipe}}</span></p>
             <hr>
         </div>  
-      </div>
-<div id="click" class="text-center">
-    <a href="#reps"><img src="https://raw.githubusercontent.com/Owiti-Charles/Git-Search/master/src/assets/mouse_click.png" alt=" mouse_click" id="mouse-click"></a> 
-</div>
-
+    </div>
+    </div>  
 <div class="text-center repos" id="reps">
     <h2>Repositories</h2>
   </div>
 <div class="container allrepos">
-  <div class="card" appHighlight *ngFor="let repository of repo" style="width: 22rem;" class="repo">
+  <div class="card" *ngFor="let repository of repo" style="width: 22rem;" class="repo">
     <div class="card-body" >
       <h5 class="card-title"><span class="top">Repo Name:</span> &nbsp;{{repository.name}} </h5>
       <div class="card-text">
@@ -46,7 +43,7 @@
         <div class="card-subtitle mb-2">
             <span class="top">Language: </span> {{repository.language}}
         </div>
-        <div class="card-subtitle mb-2"><span class="top">Created:&nbsp; <span id="created">{{repository.created_at | datePipe}}</span> &nbsp;  On:</span> &nbsp;{{repository.created_at | date}}
+        <div class="card-subtitle mb-2"><span class="top">Created:&nbsp; <span id="created">{{repository.created_at | datepipe}}</span> &nbsp;  On:</span> &nbsp;{{repository.created_at | date}}
         </div>
       </div>
       </div>
@@ -61,10 +58,10 @@
           <button class="btn btn-sm btn-success" id="visit"><a href="{{repository.html_url}}" class="card-link">VIEW &nbsp; <i class="fa fa-arrow-circle-right" style="font-size:16px"></i></a> </button> 
         </div>
       </div>
-  </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
+
 
 
 
