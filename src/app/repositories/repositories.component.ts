@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MyserviceService} from '../services/myservice.service'
 
 @Component({
   selector: 'app-repositories',
