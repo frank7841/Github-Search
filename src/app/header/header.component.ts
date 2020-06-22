@@ -9,10 +9,22 @@ import {Users} from '../users'
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  user:Users;
 
-  constructor() { }
+  constructor(public getService: MyserviceService) { }
+  searchs(nameSearch){
+    this.getService.userSeach(nameSearch).then(
+      (success)=>{
+        this.user = this.getService.userFind;
+      },
+      (error)=>{
+        console.log(error)
+      }
+    )
+  }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.searchs('frank-simiyu')
   }
 
 }
