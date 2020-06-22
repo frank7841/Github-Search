@@ -11,8 +11,6 @@ import {Repos} from '../repos'
 export class MyserviceService {
   userFind:Users;
   allRepos:Repos;
-
-
   constructor(private http: HttpClient) {
     this.userFind = new Users("","","","",0,0,0,"",new Date);
     this.allRepos = new Repos("","","",new Date,0,0,"");

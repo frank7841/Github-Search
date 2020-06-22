@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
 }
 
   ngOnInit(){
-    this.searchs('frank-simiyu')
+    this.searchs('frank7841')
   }
 
 }
