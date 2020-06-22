@@ -10,6 +10,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { SearchRippoComponent } from './search-rippo/search-rippo.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { DatepipePipe } from './datepipe.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     NavigationBarComponent,
     SearchRippoComponent,
     SearchFormComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    DatepipePipe
   ],
   imports: [
     BrowserModule,
