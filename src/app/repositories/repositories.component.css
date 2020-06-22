@@ -1,0 +1,27 @@
+.allrepos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+hr{
+  background-color:grey;
+  height: 1px;
+}
+.desc{
+  min-height: 95px;
+}
+.top{
+  font-weight: 550;
+}
+.btn-group{
+  margin-left: 13px;
+}
+.repo{
+  color: black;
+  margin-bottom: 2%;
+  border-radius: 1px;
+  border-style: dashed; 
+}
+.form-control::placeholder{
+  color: white;
+}
