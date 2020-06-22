@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { SearchRippoComponent } from './search-rippo/search-rippo.component';
+import { SearchFormComponent } from './search-form/search-form.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SearchRippoComponent } from './search-rippo/search-rippo.component';
     AppComponent,
     HeaderComponent,
     NavigationBarComponent,
-    SearchRippoComponent
+    SearchRippoComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,
