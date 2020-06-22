@@ -40,4 +40,31 @@ export class MyserviceService {
       );
     });
   }
+  getRepo(nameSearch){
+    interface Repos{
+      name:string;
+      html_url:string;
+      description:string;
+      forks:number;
+      watchers_count:number;
+      language:string;
+      created_at:Date;
+    }
+    return new Promise((resolve,reject)=>{
+      this.http.get<Repos>('https://api.github.com/users/'+nameSearch+"/repos?order=created&sort=asc?access_token="+environment.apiKey).toPromise().then(
+        (results) => {
+          this.allRepos = results;
+          resolve();
+        },
+        (error) => {
+          console.log(error);
+          reject();
+        }
+      );
+    });
+  }
+}
+
+
+  }
 }
