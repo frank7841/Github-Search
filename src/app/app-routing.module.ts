@@ -10,6 +10,7 @@ import {RepositoriesComponent} from './repositories/repositories.component'
 const routes: Routes = [
   {path: 'header', component: HeaderComponent},
   {path: 'repositories', component: RepositoriesComponent},
+  { path: '', redirectTo:"/header", pathMatch:"full"},
 ];
 
 @NgModule({
